@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: simple-dotNet-dev
+spec:
+  destination:
+    namespace: simple-dotNet-dev
+    server: https://kubernetes.default.svc
+  project: simple-dotNet
+  source:
+    path: dotNet-service-deploy/app/overlays/dev
+    repoURL: https://github.com/froberge/simple-dotNet-deployment.git
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - ApplyOutOfSyncOnly=true

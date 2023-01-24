@@ -1,0 +1,1 @@
+This folder contain the code to deploy the simple quarkus applicaiton from the GitOps projects.

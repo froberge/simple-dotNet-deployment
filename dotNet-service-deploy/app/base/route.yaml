@@ -1,0 +1,14 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: simple-dotNet-service
+  name: simple-dotNet-service
+  
+spec:
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: simple-dotNet-service
+    weight: 100

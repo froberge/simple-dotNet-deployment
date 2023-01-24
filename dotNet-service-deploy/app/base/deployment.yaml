@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: simple-dotNet-service
+    app.openshift.io/runtime: dotNet
+  name: simple-dotNet-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simple-dotNet-service
+  template:
+    metadata:
+      labels:
+        app: simple-dotNet-service
+    spec:
+      containers:
+        - name: simple-dotNet-service
+          image: PATCH_ME
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          imagePullPolicy: Always
+      restartPolicy: Always
+      terminationGracePeriodSeconds: 30
+      dnsPolicy: ClusterFirst
+      securityContext: {}
+      schedulerName: default-scheduler
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+  revisionHistoryLimit: 5
+status: {}

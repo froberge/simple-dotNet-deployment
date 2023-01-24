@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    openshift.io/description: Prod environment
+    openshift.io/display-name: Prod environment
+  labels:
+    argocd.argoproj.io/managed-by: simple-dotNet-gitops    
+  name: simple-dotNet-prod
