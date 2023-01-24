@@ -34,7 +34,7 @@ __NOTE__
 
 1. Use kustomize` create the different resources needed to run the demo 
     ```
-    oc apply -k gitops/setup/overlays/demo
+    oc apply -k setup/overlays/demo
     ```
 
     This will create all the elements required    
