@@ -5,5 +5,5 @@ metadata:
     openshift.io/description: Development environment
     openshift.io/display-name: Development environment
   labels:
-    argocd.argoproj.io/managed-by: simple-dotNet-gitops
-  name: simple-dotNet-dev
+    argocd.argoproj.io/managed-by: simple-dotnet-gitops
+  name: simple-dotnet-dev

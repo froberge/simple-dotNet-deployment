@@ -6,4 +6,4 @@ metadata:
     openshift.io/display-name: Argo CD for Developper
   labels:
     argocd.argoproj.io/managed-by: openshift-gitops
-  name: simple-dotNet-gitops
+  name: simple-dotnet-gitops

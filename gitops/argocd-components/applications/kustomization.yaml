@@ -1,9 +1,9 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-namespace: simple-dotNet-gitops
+namespace: simple-dotnet-gitops
 
 resources:
-- simple-dotNet-project.yaml
-- simple-dotNet-dev.yaml
-- simple-dotNet-prod.yaml
+- simple-dotnet-project.yaml
+- simple-dotnet-dev.yaml
+- simple-dotnet-prod.yaml

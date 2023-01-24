@@ -1,7 +1,7 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
-  name: ocp-simple-dotNet-role
+  name: ocp-simple-dotnet-role
 rules:
   - apiGroups: [""]
     resources: ["pods"]
@@ -16,11 +16,11 @@ rules:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
-  name: ocp-simple-dotNet-role-binding
+  name: ocp-simple-dotnet-role-binding
 subjects:
   - kind: ServiceAccount
     name: default
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
-  name: ocp-simple-dotNet-role
+  name: ocp-simple-dotnet-role

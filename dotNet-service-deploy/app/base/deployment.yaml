@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: simple-dotNet-service
+    app: simple-dotnet-service
     app.openshift.io/runtime: dotNet
-  name: simple-dotNet-service
+  name: simple-dotnet-service
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: simple-dotNet-service
+      app: simple-dotnet-service
   template:
     metadata:
       labels:
-        app: simple-dotNet-service
+        app: simple-dotnet-service
     spec:
       containers:
-        - name: simple-dotNet-service
+        - name: simple-dotnet-service
           image: PATCH_ME
           resources: {}
           terminationMessagePath: /dev/termination-log

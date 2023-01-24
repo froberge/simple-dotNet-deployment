@@ -5,5 +5,5 @@ metadata:
     openshift.io/description: Prod environment
     openshift.io/display-name: Prod environment
   labels:
-    argocd.argoproj.io/managed-by: simple-dotNet-gitops    
-  name: simple-dotNet-prod
+    argocd.argoproj.io/managed-by: simple-dotnet-gitops    
+  name: simple-dotnet-prod

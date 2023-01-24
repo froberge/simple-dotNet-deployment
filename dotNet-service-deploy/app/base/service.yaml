@@ -2,12 +2,12 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: simple-dotNet-service
-  name: simple-dotNet-service
+    app: simple-dotnet-service
+  name: simple-dotnet-service
 
 spec:
   selector:
-    app: simple-dotNet-service
+    app: simple-dotnet-service
   ports:
   - port: 8080
     protocol: TCP

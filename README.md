@@ -38,7 +38,7 @@ __NOTE__
     ```
 
     This will create all the elements required    
-        * __simple-dotNet-gitops__ - The namespace where the argoCD instance for Developer will be install.
-        * __simple-dotNet-dev__ - The `DEV` environment for the demo.
-        * __simple-dotNet-prod__ - The `PROD` environment for the demo.
+        * __simple-dotnet-gitops__ - The namespace where the argoCD instance for Developer will be install.
+        * __simple-dotnet-dev__ - The `DEV` environment for the demo.
+        * __simple-dotnet-prod__ - The `PROD` environment for the demo.
 

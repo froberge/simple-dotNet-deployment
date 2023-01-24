@@ -5,6 +5,6 @@ bases:
   - ../argocd-components/argocd-dev-instance
 
 resources:
-  - namespaces/simple-dotNet-dev.yaml
-  - namespaces/simple-dotNet-prod.yaml
+  - namespaces/simple-dotnet-dev.yaml
+  - namespaces/simple-dotnet-prod.yaml
   - namespaces/rbac-developer.yaml
