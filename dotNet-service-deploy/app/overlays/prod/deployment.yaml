@@ -1,3 +1,3 @@
 - op: replace
   path: /spec/template/spec/containers/0/image
-  value: quay.io/froberge/ocp-githubaction-demo:v0.0.1
+  value: quay.io/froberge/ocp-githubaction-demo:3fdd3b41c98d
