@@ -14,4 +14,4 @@ patchesJson6902:
     version: v1
 images:
 - name: quay.io/froberge/ocp-githubaction-demo
-  newTag: 04f120a81b1c
+  newTag: bab7c3f245aa
